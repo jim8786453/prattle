@@ -67,7 +67,7 @@ class TestPrattle(TestMinimal):
         r = self.get('conversations/%s' % id_)
         self.assertEqual(r[1], 200)
         result = r[0]
-        
+
         # Check we have two participants.
         self.assertEqual(len(result['participants']), 2)
 
@@ -87,7 +87,7 @@ class TestPrattle(TestMinimal):
         }
         r = self.post('conversations/%s/messages' % conversation_id, data=data)
         self.assertEqual(r[1], 401)
-        
+
         # Create a message.
         data = {
             'from': 'foo',
