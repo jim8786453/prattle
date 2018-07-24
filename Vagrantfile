@@ -29,7 +29,7 @@ Vagrant.configure(2) do |config|
 
       # OS packages
       sudo apt-get -y --allow-unauthenticated install git make \
-      python-dev python-pip python3.4 libpq-dev mongodb-org;
+      python-dev python-pip python3.4 mongodb-org;
 
       # Install python build dependencies
       sudo pip install virtualenv tox;
